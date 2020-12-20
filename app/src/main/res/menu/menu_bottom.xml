@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    app:cnb_unselectedColor='#fff'
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/trend"
+        android:icon="@drawable/trend"
+        android:title="Trending"
+        app:cnb_iconColor='#fff'
+        app:cnb_textColor='#fff'
+                />
+    <item
+        android:id="@+id/homee"
+        android:icon="@drawable/home"
+        android:title="Home"
+        app:cnb_iconColor='#fff'
+        app:cnb_textColor='#fff'
+        />
+    <item
+        android:id="@+id/category"
+        android:icon="@drawable/heart"
+        android:title="Liked"
+        app:cnb_iconColor='#fff'
+        app:cnb_textColor='#fff'
+        />
+</menu>

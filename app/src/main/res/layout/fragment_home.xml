@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/title1"
+            android:layout_height="30dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/walltitle" />
+
+        <Button
+            android:layout_width="30dp"
+            android:id="@+id/privacy_view"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/privacy_vector"
+            android:layout_marginTop="17dp"
+            android:layout_alignParentRight="true" />
+
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/sharenow"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/appshare"
+            android:layout_marginTop="17dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/search_bar"
+            android:layout_height="57dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@+id/title1"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/searchimg" />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/search_bar"
+            android:layout_height="match_parent">
+                
+                <com.google.android.material.appbar.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/app_bar_layout"
+                    android:layout_height="70dp">
+
+                        <com.google.android.material.appbar.CollapsingToolbarLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                                android:background="#fff"
+                                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                        <androidx.recyclerview.widget.RecyclerView
+                                            android:id="@+id/recyclerView2"
+                                            android:layout_marginTop="7dp"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="5dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentBottom="false"
+                                            android:background="#FFFFFF" />
+
+                                </RelativeLayout>
+
+                        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+                </com.google.android.material.appbar.AppBarLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:background="#fff" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/title1"
+        android:layout_height="30dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/walltitle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title1"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/searchlayout"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:id="@+id/searchbar"
+            android:layout_width="match_parent"
+            android:hint="Search Wallpaper"
+            android:background="@drawable/bg_search"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_weight="10"
+            android:textColorHint="#000"
+            android:imeOptions="actionSearch"
+            android:textSize="18sp"
+            android:fontFamily="@font/average_sans"
+            android:padding="13dp"
+            android:textColor="#000"
+            android:inputType="textPersonName" />
+
+        <ImageView
+            android:id="@+id/serachicon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/bg_search2"
+            android:padding="15dp"
+            android:src="@drawable/search" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/searchlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="false"
+        android:background="#fff" />
+
+</RelativeLayout>

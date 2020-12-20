@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:layout_centerHorizontal="false"
+    tools:context=".Open_Wallpaper">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/backload"
+        />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:baselineAlignBottom="false"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/circle_like" />
+
+        <com.varunest.sparkbutton.SparkButton
+            android:id="@+id/spark_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:sparkbutton_activeImage="@drawable/like_filled"
+            app:sparkbutton_iconSize="45dp"
+            app:sparkbutton_inActiveImage="@drawable/grey_heart"
+            app:sparkbutton_primaryColor="@color/color1"
+            app:sparkbutton_secondaryColor="@color/color2" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:padding="7dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/circle_like"
+        android:clickable="true"
+        app:srcCompat="@drawable/backblack"/>
+
+        <com.nightonke.boommenu.BoomMenuButton
+            android:id="@+id/bmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="35dp"
+            app:bmb_buttonEnum="textInsideCircle"
+            app:bmb_normalColor="@color/color6"
+            app:bmb_dotRadius="4dp"
+            app:bmb_buttonRadius="23dp"
+            app:bmb_piecePlaceEnum="piecePlace_dot_3_3"
+            app:bmb_buttonPlaceEnum="buttonPlace_sc_3_3"
+            />
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "951587979025",
+    "firebase_url": "https://wallpaper-arena.firebaseio.com",
+    "project_id": "wallpaper-arena",
+    "storage_bucket": "wallpaper-arena.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951587979025:android:4cb020ac21170c949a16b0",
+        "android_client_info": {
+          "package_name": "com.mark.wallpaperarena"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951587979025-ejb1gvqtd31vlverresjojhd8v9b692h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mark.wallpaperarena",
+            "certificate_hash": "618d4b09e6da0ed3beed95b500b67770137dc3e2"
+          }
+        },
+        {
+          "client_id": "951587979025-tim7m4k5n95m6bne27dipcq1d0hqthnf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7Q-DI_v4OxXH5qZc1jFEdpuOZfwGw-d8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951587979025-tim7m4k5n95m6bne27dipcq1d0hqthnf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
