@@ -24,7 +24,7 @@ import java.util.List;
 
 public class City extends Fragment{
 
-    private final String JSON_URL = "https://raw.githubusercontent.com/siddhant792/Wallpaper-Arena/master/City1.json";
+    private final String JSON_URL = Constants.city;
     private JsonArrayRequest request;
     private RequestQueue requestQueue;
     private RecyclerView recyclerView;

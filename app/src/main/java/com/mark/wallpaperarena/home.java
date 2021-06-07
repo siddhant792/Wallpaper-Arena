@@ -54,8 +54,7 @@ import maes.tech.intentanim.CustomIntent;
 public class home extends Fragment {
 
     private static final int DIALOUGE = 1;
-    private final String JSON_URL2 = "https://raw.githubusercontent.com/siddhant792/Wallpaper-Arena/master/homefinal.json";
-    private final String JSON_URL3 = "https://raw.githubusercontent.com/siddhant792/Wallpaper-Arena/master/Testnow.json";
+    private final String JSON_URL2 = Constants.home;
     private JsonArrayRequest request;
     ImageView searchbar;
     private RequestQueue requestQueue;

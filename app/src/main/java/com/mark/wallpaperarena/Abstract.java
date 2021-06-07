@@ -24,7 +24,7 @@ import java.util.List;
 
 public class Abstract extends Fragment{
 
-    private final String JSON_URL = "https://raw.githubusercontent.com/siddhant792/Wallpaper-Arena/master/Abstract1.json";
+    private final String JSON_URL = Constants.abstrac;
     private JsonArrayRequest request;
     private RequestQueue requestQueue;
     private RecyclerView recyclerView;

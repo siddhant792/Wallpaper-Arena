@@ -44,7 +44,7 @@ import okhttp3.OkHttpClient;
 
 public class trending extends Fragment{
 
-    private final String JSON_URL = "https://raw.githubusercontent.com/siddhant792/Wallpaper-Arena/master/homefinal.json";
+    private final String JSON_URL = Constants.home;
     private JsonArrayRequest request;
     private RequestQueue requestQueue;
     private RecyclerView recyclerView;

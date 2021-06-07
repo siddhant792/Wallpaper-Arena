@@ -24,7 +24,7 @@ import java.util.List;
 
 public class Amoled extends Fragment{
 
-    private final String JSON_URL = "https://raw.githubusercontent.com/siddhant792/Wallpaper-Arena/master/Amoled1.json";
+    private final String JSON_URL = Constants.amoled;
     private JsonArrayRequest request;
     private RequestQueue requestQueue;
     private RecyclerView recyclerView;

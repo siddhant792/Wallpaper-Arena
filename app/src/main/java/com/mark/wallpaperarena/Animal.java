@@ -24,7 +24,7 @@ import java.util.List;
 
 public class Animal extends Fragment{
 
-    private final String JSON_URL = "https://raw.githubusercontent.com/siddhant792/Wallpaper-Arena/master/Animal1.json";
+    private final String JSON_URL = Constants.animal;
     private JsonArrayRequest request;
     private RequestQueue requestQueue;
     private RecyclerView recyclerView;

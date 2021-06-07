@@ -24,7 +24,7 @@ import java.util.List;
 
 public class Cars extends Fragment{
 
-    private final String JSON_URL = "https://raw.githubusercontent.com/siddhant792/Wallpaper-Arena/master/Car1.json";
+    private final String JSON_URL = Constants.car;
     private JsonArrayRequest request;
     private RequestQueue requestQueue;
     private RecyclerView recyclerView;

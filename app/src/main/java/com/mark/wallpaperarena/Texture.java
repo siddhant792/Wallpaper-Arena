@@ -24,7 +24,7 @@ import java.util.List;
 
 public class Texture extends Fragment{
 
-    private final String JSON_URL = "https://raw.githubusercontent.com/siddhant792/Wallpaper-Arena/master/Texture1.json";
+    private final String JSON_URL = Constants.texture;
     private JsonArrayRequest request;
     private RequestQueue requestQueue;
     private RecyclerView recyclerView;
